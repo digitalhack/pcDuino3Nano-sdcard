@@ -8,8 +8,10 @@ cd ./staging
 
 sdcard="/dev/sdb"
 
+\# Wipe out existing partition on sdcard
 dd if=/dev/zero of=${sdcard} bs=1M count=1
 
+\# Copy u-boot with spl to sdcard
 dd if=output/u-boot/u-boot-sunxi-with-spl.bin of=${sdcard} bs=1024 seek=8
 
 sfdisk -R ${sdcard}  
