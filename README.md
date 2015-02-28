@@ -36,7 +36,7 @@ umount ${sdcard}1
 mount ${sdcard}2 rootfs
 
 tar xzvf output/rootfs/wheezy-rootfs.tar.gz -C rootfs  
-tar zxvf output/boot/linux-3.4.106-pcduino3-nano.tar.gz -C output/rootfs/ lib  
+tar zxvf output/boot/linux-3.4.106-pcduino3-nano.tar.gz -C rootfs/ lib  
 
 umount ${sdcard}2
 
