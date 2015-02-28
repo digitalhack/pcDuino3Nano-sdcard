@@ -30,7 +30,7 @@ mount ${sdcard}1 bootfs
 cp output/boot/boot.scr bootfs  
 cp output/boot/linksprite-pcduino3-nano.bin bootfs  
 tar zxvf output/boot/linux-3.4.106-pcduino3-nano.tar.gz \\  
-&nbsp;&nbsp;&nbsp;&nbsp; --wildcards --strip-components=1 -C bootfs/ boot/System.map* boot/config* boot/vmlinuz*
+&nbsp;&nbsp;&nbsp;&nbsp; --wildcards --strip-components=1 -C bootfs/ boot/System.map* boot/config* boot/vmlinuz*  
 umount ${sdcard}1
 
 mount ${sdcard}2 rootfs
